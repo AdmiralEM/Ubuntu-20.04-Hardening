@@ -1,8 +1,10 @@
 sudo apt-get purge snapd
-rm -rf ~/snap                                      
-sudo rm -rf /snap                                  
-sudo rm -rf /var/snap                              
-sudo rm -rf /var/lib/snapd
+# These are handled by purging snapd and shouldn't be needed, 
+# but listed here just in case.
+#   rm -rf ~/snap                                      
+#   sudo rm -rf /snap                                  
+#   sudo rm -rf /var/snap                              
+#   sudo rm -rf /var/lib/snapd
 sudo apt autoremove
 sudo apt clean
 
